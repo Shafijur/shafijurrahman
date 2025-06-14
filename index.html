@@ -1,0 +1,941 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="img/logo/logo2.png">
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shafijur Rahman</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  
+</head>
+<body>
+
+  <!-- Header Section -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#banner-section">
+        <img src="img/logo/logo.png" alt="Logo">
+      </a>
+      <!-- Search Bar Section (Always visible on top or side) -->
+      <div class="er">
+        <div class="row">
+          <div class="col-12 search-container">
+            <input type="text" class="form-control search-bar" placeholder="Search...">
+          </div>
+        </div>
+      </div>
+      
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" id="nav-home" href="#banner-section">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" id="nav-about" href="sst.html" target="_blank">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="nav-projects" href="#projects">Projects</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" id="nav-testimonial" href="#testimonial">Testimonial</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" id="nav-contact" href="#contact">Contact</a>
+          </li>
+
+          <!-- Language Switcher -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Language
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+              <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')">English</a></li>
+              <li><a class="dropdown-item" href="#" onclick="changeLanguage('bn')">বাংলা</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    
+    </div>
+  </nav>
+<!-- ✅ Banner Section -->
+<section class="banner bagcol text-white d-flex align-items-center" id="banner-section">
+  <div class="overlay"></div>
+  <div class="container text-center position-relative">
+    <h1 class="display-4 fw-bold" id="banner-title">Welcome to My Personal Website</h1>
+    
+    <div class="mt-3">
+      <a href="#projects" class="btn viw mb-1" id="banner-button">View Projects</a>
+      <a href="#contact" class="btn btn-outline-light ms-2 con mb-1" id="contact2">Contact Me</a>
+    </div>
+    <div class="social-icons mt-4">
+      <a href="https://www.facebook.com/profile.php?id=61568652315647&rdid=sZkewzGY5ZWhgiAf&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F15Lwf11m25%2F#" target="_blank" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/shafijur-rahman-71124833b" target="_blank" class="text-white"><i class="bi bi-linkedin"></i></a>
+    </div>
+    <div class="scroll-down mt-4">
+      <a href="#about" class="text-white"><i class="bi bi-chevron-double-down fs-1"></i></a>
+    </div>
+    
+  </div>
+</section>
+<section class="bannerr container  align-items-center" >
+      <div class="mant">
+      <p class="lead" id="typed-text"></p>
+    </div>
+
+</section>
+
+<!-- ✅ Enhanced Bilingual About Section -->
+<section id="about" class="py-5 bagcol" style="background-color: #f8f9fa;">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- Left Column: Text & Skills -->
+      <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
+        <h2 id="about-title" class=" abou mb-3">About Me</h2>
+        <p id="about-description" class="lead led">
+          I’m a creative and detail-oriented developer with a passion for building clean and user-friendly websites.
+        </p>
+
+        <h5 id="about-skills-title" class="mt-4 abou">Skills:</h5>
+        <ul class="list-unstyled">
+          <li><i class="bi bi-check-circle text-success me-2"></i><span id="skill-1">HTML, CSS, JavaScript</span></li>
+          <li><i class="bi bi-check-circle text-success me-2"></i><span id="skill-2">Bootstrap, Tailwind CSS</span></li>
+          <li><i class="bi bi-check-circle text-success me-2"></i><span id="skill-3">React.js & Vue.js</span></li>
+          <li><i class="bi bi-check-circle text-success me-2"></i><span id="skill-4">Responsive Design</span></li>
+          <li><i class="bi bi-check-circle text-success me-2"></i><span id="skill-5">Git & GitHub</span></li>
+        </ul>
+      </div>
+
+      <!-- Right Column: Image -->
+      <div class="col-md-6 text-center">
+        <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg" 
+     alt="Developer Image"
+     class="img-fluid rounded-4 shadow"
+     style="max-height: 400px;">
+
+
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<section class="container">
+  <div class="container hovi">
+    <h2 id="myhobb"> My Hobbies</h2>
+    <p id="myhobbi">"My hobbies are the things I enjoy doing in my free time. They help me stay creative, relaxed, and motivated. I love visiting new places and exploring different cultures. Sketching street scenes and live moments gives me peace and joy. I enjoy playing chess, which sharpens my thinking and strategy skills. Solving all kinds of Rubik’s cubes — like 3x3, pyramid, and diamond — is another fun mental challenge I enjoy. These hobbies are not just pastimes; they are a part of who I am."</p>
+  
+    <section class="slider-container bagcol">
+    
+
+  
+
+  <div class="slider-track" id="scrollSlider">
+
+    
+  <!-- Visiting -->
+  <div class="hobby-card">
+    <img src="img/Hobbies/visite.jpg" class="hobby-img" alt="Visiting Places">
+    <div class="hobby-content">
+      <div class="hobby-title" id="hobi-1">Visiting Places</div>
+      <div class="hobby-desc" id="hobi-12">I love exploring new places and experiencing different cultures. Traveling refreshes my mind, inspires creativity, and helps me see the world from new perspectives.</div>
+    </div>
+  </div>
+
+  <!-- Sketching -->
+  <div class="hobby-card">
+    <img src="img/Hobbies/sketing.jpg" class="hobby-img" alt="Sketching">
+    <div class="hobby-content">
+      <div class="hobby-title" id="hobi-2">Sketching</div>
+      <div class="hobby-desc" id="hobi-22">I love skating in my free time. Putting on my skating shoes and skating through the streets or parks is not just fun, but also a great form of exercise. It keeps my body active, helps maintain balance, and gives me mental peace.</div>
+    </div>
+  </div>
+
+  <!-- Chess -->
+  <div class="hobby-card" >
+    <img src="img/Hobbies/chess.jpg" class="hobby-img" alt="Chess">
+    <div class="hobby-content">
+      <div class="hobby-title" id="hobi-3">Chess</div>
+      <div class="hobby-desc" id="hobi-33">I love playing chess. It is a game of intelligence that enhances my thinking ability, patience, and strategic decision-making skills. Playing chess in my free time keeps me mentally alert and builds a mindset to embrace challenges.</div>
+    </div>
+  </div>
+
+  <!-- Rubik's Cube -->
+  <div class="hobby-card">
+    <img src="img/Hobbies/Rubik's Cube.png" class="hobby-img" alt="Rubik's Cube">
+    <div class="hobby-content">
+      <div class="hobby-title" id="hobi-4">Solving Rubik’s Cubes</div>
+      <div class="hobby-desc" id="hobi-44">I enjoy solving different types of Rubik’s Cubes such as 3x3, pyramid, and diamond cubes. It improves my mental skills, patience, and problem-solving abilities. Solving Rubik’s Cubes is a fun and challenging hobby for me.</div>
+    </div>
+  </div>
+
+     
+  <!-- Visiting -->
+  <div class="hobby-card">
+    <img src="img/Hobbies/visite.jpg" class="hobby-img" alt="Visiting Places">
+    <div class="hobby-content">
+      <div class="hobby-title" id="hobi-5">Visiting Places</div>
+      <div class="hobby-desc" id="hobi-55">I love exploring new places and experiencing different cultures. Traveling refreshes my mind, inspires creativity, and helps me see the world from new perspectives.</div>
+    </div>
+  </div>
+
+  <!-- Sketching -->
+  <div class="hobby-card">
+    <img src="img/Hobbies/sketing.jpg" class="hobby-img" alt="Sketching">
+    <div class="hobby-content">
+      <div class="hobby-title" id="hobi-6">Sketching</div>
+      <div class="hobby-desc" id="hobi-66">I love skating in my free time. Putting on my skating shoes and skating through the streets or parks is not just fun, but also a great form of exercise. It keeps my body active, helps maintain balance, and gives me mental peace.</div>
+    </div>
+  </div>
+
+  <!-- Chess -->
+  <div class="hobby-card" >
+    <img src="img/Hobbies/chess.jpg" class="hobby-img" alt="Chess">
+    <div class="hobby-content">
+      <div class="hobby-title" id="hobi-7">Chess</div>
+      <div class="hobby-desc" id="hobi-77">I love playing chess. It is a game of intelligence that enhances my thinking ability, patience, and strategic decision-making skills. Playing chess in my free time keeps me mentally alert and builds a mindset to embrace challenges.</div>
+    </div>
+  </div>
+
+  <!-- Rubik's Cube -->
+  <div class="hobby-card">
+    <img src="img/Hobbies/Rubik's Cube.png" class="hobby-img" alt="Rubik's Cube">
+    <div class="hobby-content">
+      <div class="hobby-title" id="hobi-8">Solving Rubik’s Cubes</div>
+      <div class="hobby-desc" id="hobi-88">I enjoy solving different types of Rubik’s Cubes such as 3x3, pyramid, and diamond cubes. It improves my mental skills, patience, and problem-solving abilities. Solving Rubik’s Cubes is a fun and challenging hobby for me.</div>
+    </div>
+  </div>
+
+  
+
+
+
+  
+</div>
+</section>
+
+</div>
+
+</section>
+
+
+
+
+<section class="container project" id="projects">
+  <div class="project-section">
+    <h2 id="my-pro">My Projects</h2>
+  <p id="my-p">These projects showcase my skills and creativity, developed using modern technologies and best practices.</p>
+    <section class="slider-container bagcol">
+    
+
+  
+
+  <div class="project-track" id="scrollSlider">
+
+    
+ <!-- Portfolio Website -->
+<div class="project-card">
+  <img src="img/Hobbies/visite.jpg" class="hobby-img" alt="Portfolio Website">
+  <div class="project-content">
+    <div class="hobby-titley" id="projejt1">Portfolio Website</div>
+    <div class="hobby-descy" id="projejt11">I design and develop modern portfolio websites to showcase personal or professional achievements attractively.</div>
+    <a href="" id="pro-link">Show The Project</a>
+  </div>
+</div>
+
+<!-- E-commerce Website -->
+<div class="project-card">
+  <img src="img/Hobbies/sketing.jpg" class="hobby-img" alt="E-commerce">
+  <div class="project-content">
+    <div class="hobby-titley" id="projejt2">E-commerce Website</div>
+    <div class="hobby-descy" id="projejt22">I work on e-commerce websites where users can browse products, place orders, and make secure online payments.</div>
+    <a href="" id="pro-link1">Show The Project</a>
+  </div>
+</div>
+
+<!-- Blog Website -->
+<div class="project-card">
+  <img src="img/Hobbies/chess.jpg" class="hobby-img" alt="Blog">
+  <div class="project-content">
+    <div class="hobby-titley" id="projejt3">Blog Website</div>
+    <div class="hobby-descy" id="projejt33">I create blog websites with user-friendly interfaces where authors can share ideas, articles, and tutorials easily.</div>
+    <a href="" id="pro-link2">Show The Project</a>
+  </div>
+</div>
+
+<!-- Educational Website -->
+<div class="project-card">
+  <img src="img/Hobbies/Rubik's Cube.png" class="hobby-img" alt="Educational">
+  <div class="project-content">
+    <div class="hobby-titley" id="projejt4">Educational Website</div>
+    <div class="hobby-descy" id="projejt44">I love building educational platforms that offer courses, quizzes, and resources for self-learning and growth.</div>
+    <a href="" id="pro-link3">Show The Project</a>
+  </div>
+</div>
+
+<!-- Agency Website -->
+<div class="project-card">
+  <img src="img/Hobbies/visite.jpg" class="hobby-img" alt="Agency">
+  <div class="project-content">
+    <div class="hobby-titley" id="projejt5">Agency Website</div>
+    <div class="hobby-descy" id="projejt55">I design responsive business websites to present services, client testimonials, and contact information professionally.</div>
+    <a href="" id="pro-link4">Show The Project</a>
+  </div>
+</div>
+
+<!-- News Portal -->
+<div class="project-card">
+  <img src="img/Hobbies/sketing.jpg" class="hobby-img" alt="News Portal">
+  <div class="project-content">
+    <div class="hobby-titley" id="projejt6">News Portal</div>
+    <div class="hobby-descy" id="projejt66">I develop news websites that display updated articles, headlines, and breaking news in real-time.</div>
+    <a href="" id="pro-link5">Show The Project</a>
+  </div>
+</div>
+
+<!-- Restaurant Website -->
+<div class="project-card">
+  <img src="img/Hobbies/chess.jpg" class="hobby-img" alt="Restaurant">
+  <div class="project-content">
+    <div class="hobby-titley" id="projejt7">Restaurant Website</div>
+    <div class="hobby-descy" id="projejt77">I build visually stunning sites to display photography works in high quality, focusing on user experience.</div>
+    <a href="" id="pro-link6">Show The Project</a>
+  </div>
+</div>
+
+<!-- Portfolio Gallery -->
+<div class="project-card">
+  <img src="img/Hobbies/Rubik's Cube.png" class="hobby-img" alt="Gallery">
+  <div class="project-content">
+    <div class="hobby-titley" id="projejt8">Portfolio Gallery</div>
+    <div class="hobby-descy" id="projejt88">I create travel blogs where travelers can share experiences, tips, and photos from different places around the world.</div>
+    <a href="" id="pro-link7">Show The Project</a>
+  </div>
+</div>
+
+
+
+  
+</div>
+<div class="show-project">
+  <a href="" id="show-more">Show More Projects</a>
+</div>
+
+</section>
+
+</div>
+
+</section>
+  
+</section>
+
+
+<section id="testimonial" class="testimonial">
+  <div class="testimonial-container container">
+    <h2 id="testimonia">Testimonial</h2>
+    <h3 id="what-say">What Our Clients Say</h3>
+    <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-lg border-0">
+                        <img src="img/testimonial/me.png" class="card-img-top rounded-circle mx-auto mt-4" alt="Client 1">
+                        <div class="card-body text-center">
+                            <h5 id="test1" class="card-title">John Doe</h5>
+                            <p id="test11" class="card-text">"This service has been incredible! It helped me achieve my goals faster than I ever expected. Highly recommend!"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-lg border-0">
+                        <img src="img/testimonial/men.png" class="card-img-top rounded-circle mx-auto mt-4" alt="Client 2">
+                        <div class="card-body text-center">
+                            <h5 id="test2" class="card-title">Jane Smith</h5>
+                            <p id="test22" class="card-text">"Fantastic experience! The team was professional and efficient. I couldn't be happier with the results."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-lg border-0">
+                        <img src="img/testimonial/men1.png" class="card-img-top rounded-circle mx-auto mt-4" alt="Client 3">
+                        <div class="card-body text-center">
+                            <h5 id="test3" class="card-title">Michael Lee</h5>
+                            <p id="test33" class="card-text">"I saw immediate improvements in my business. Great service, great people. I highly recommend them."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card shadow-lg border-0">
+                      <img src="img/testimonial/wom.png" class="card-img-top rounded-circle mx-auto mt-4" alt="Client 1">
+                      <div class="card-body text-center">
+                          <h5 id="test4" class="card-title">Anika Rahman</h5>
+                          <p id="test44" class="card-text">"Working with this team was a delight! Their dedication and attention to detail made all the difference."</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                  <div class="card shadow-lg border-0">
+                      <img src="img/testimonial/wome.png" class="card-img-top rounded-circle mx-auto mt-4" alt="Client 2">
+                      <div class="card-body text-center">
+                          <h5 id="test5" class="card-title">Farzana Islam</h5>
+                          <p id="test55" class="card-text">"They exceeded my expectations. The service was fast, friendly, and absolutely reliable."</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                  <div class="card shadow-lg border-0">
+                      <img src="img/testimonial/women.png" class="card-img-top rounded-circle mx-auto mt-4" alt="Client 3">
+                      <div class="card-body text-center">
+                          <h5 id="test6" class="card-title">Mehjabin Chowdhury</h5>
+                          <p id="test66" class="card-text">"Incredible support and seamless experience. I’d gladly choose them again without hesitation."</p>
+                      </div>
+                  </div>
+              </div>
+
+            </div>
+  </div>
+</section>
+
+
+<section id="contact" class="py-1" style="background-color: #f8f9fa;">
+  <div class="container">
+    <div class="row align-items-center">
+      <h2 id="cinta1">Contact With Me</h2>
+
+      <!-- Left Column: Text & Skills -->
+      <div class="col-md-6 text-center lo text-md-start mb-4 mb-md-0">
+        <h3 id="cinta2">Location</h3>
+        <a href="https://www.google.com/maps/place/Flytech+IT/@24.8948702,91.8657564,17z/data=!3m2!4b1!5s0x3750552b026861c1:0xaaa3d67e606742af!4m6!3m5!1s0x375055fdf8915367:0x4fa6a464e6e0de6a!8m2!3d24.8948702!4d91.8683313!16s%2Fg%2F11vc26krlq?authuser=0&entry=ttu&g_ep=EgoyMDI1MDYwOS4xIKXMDSoASAFQAw%3D%3D" target="_blank">
+          <div class="col-md-12 d-flex loca">
+          <div class="ico">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <div class="ico-add">
+            <h3 id="cinta3">Address</h2>
+            <p id="cinta33">Bluewater Shopping City (5Th Floor), Zindabazar, Sylhet</p>
+          </div>
+        </div>
+        </a>
+        
+        <a href="https://www.google.com/maps/place/Velkuna+Purbopara+Jame+Mosjid/@24.7106285,91.9856805,44m/data=!3m1!1e3!4m14!1m7!3m6!1s0x3751af5c7dbda67b:0x2b56672be92a02ef!2sBest+Success+Coaching+Center!8m2!3d24.7175154!4d91.9853471!16s%2Fg%2F11hz37c4h8!3m5!1s0x3751b1754bcd66a3:0xf933683be797f98b!8m2!3d24.7107563!4d91.9890122!16s%2Fg%2F11snvc241d?authuser=0&entry=ttu&g_ep=EgoyMDI1MDYwOS4xIKXMDSoASAFQAw%3D%3D" target="_blank">
+          <div class="col-md-12 d-flex loca">
+          <div class="ico">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <div class="ico-add">
+            <h3 id="cinta4">Address</h2>
+            <p id="cinta44">Velkuna, Manikkuna, Fenchuganj, Sylhet</p>
+          </div>
+        </div>
+        </a>
+        <a href="https://www.google.com/maps/place/Best+Success+Coaching+Center/@24.7175154,91.9827722,17z/data=!3m1!4b1!4m6!3m5!1s0x3751af5c7dbda67b:0x2b56672be92a02ef!8m2!3d24.7175154!4d91.9853471!16s%2Fg%2F11hz37c4h8?authuser=0&entry=ttu&g_ep=EgoyMDI1MDYwOS4xIKXMDSoASAFQAw%3D%3D" target="_blank">
+          <div class="col-md-12 d-flex loca">
+          <div class="ico">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <div class="ico-add">
+            <h3 id="cinta5">Address</h2>
+            <p id="cinta55">Abdus Shahid Mansion ( in front of Bazar Mosque ), Manikganj, Fenchuganj, Sylhet</p>
+          </div>
+        </div>
+        </a>
+        <h3 id="cinta6">Social Media</h3>
+        <div class="col-md-12 d-flex icos  loca">
+          
+          <div class="ico loc">
+            <a href="https://www.facebook.com/profile.php?id=61568652315647&rdid=sZkewzGY5ZWhgiAf&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F15Lwf11m25%2F#" target="_blank">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </div>
+
+          <div class="ico loc">
+            <a href="https://www.linkedin.com/in/shafijur-rahman-71124833b" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+          
+          <div class="ico loc">
+            <a href="https://www.instagram.com/shafijur.rahman" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+          <div class="ico loc">
+            <a href="https://wa.me/8801942625398" target="_blank">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+          <div class="ico loc">
+            <a href="">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </div>
+          <div class="ico loc">
+            <a href="https://t.me/Sjntr5" target="_blank">
+              <i class="fa-brands fa-telegram"></i>
+            </a>
+          </div>
+          
+          
+        </div>
+      </div>
+
+      <!-- Right Column: Image -->
+      <div class="col-md-6 text-center lo text-md-start mb-4 mb-md-0">
+        <h3 id="cinta7">Contact With Me From Here</h3>
+        <form id="contactForm">
+            <div class="mb-3">
+              <label for="name" id="cinta8" class="form-label">Full Name</label>
+              <input type="text" placeholder="Full Name" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" id="cinta9" class="form-label">Email address</label>
+              <input type="email" placeholder="Email address" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="number" id="cinta10" class="form-label">Phone</label>
+              <input type="number" placeholder="Phone" class="form-control" id="number">
+            </div>
+            <div class="mb-3">
+              <label for="message" id="cinta11" class="form-label">Message</label>
+              <textarea class="form-control" id="message" placeholder="Message" rows="4" required></textarea>
+            </div>
+            <button type="submit" id="cinta12" class="send">Send Message</button>
+          </form>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+
+<!-- Footer Section -->
+<footer class="pt-5 pb-3 mt-5">
+  <div class="container">
+    <div class="row">
+
+      <!-- About Me -->
+      <div class="col-4 mb-4 footer-about">
+        <h5 id="ftr1">About Me</h5>
+        <p id="ftr11">I am a full-stack developer skilled in PHP and Python for building modern websites and backends.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-4 mb-4 footer-about">
+        <h5 id="ftr2">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="https://wa.me/8801942625398" target="_blank" id="ftr21">Whatsapp</a></li>
+          <li><a href="https://t.me/Sjntr5" target="_blank" id="ftr22">Telegram</a></li>
+          <li><a href="https://www.linkedin.com/in/shafijur-rahman-71124833b" target="_blank" id="ftr23">Linkedin</a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=61568652315647&rdid=sZkewzGY5ZWhgiAf&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F15Lwf11m25%2F#" target="_blank" id="ftr24">Facebook</a></li>
+          <li><a href="tel:+8801942625398" target="_blank" id="mob">+8801942625398</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class=" col-4 mb-4 footer-about">
+        <h5 id="ftr3">Contact</h5>
+        <p><i class="fas fa-envelope"></i> <span id="ftr31">Email: shafijura@gmail.com</span></p>
+        <p><i class="fas fa-phone"></i> <span id="ftr32">Phone: +8801942625398</span></p>
+        <div class="social-icons mt-2">
+          <a href="https://www.facebook.com/profile.php?id=61568652315647&rdid=sZkewzGY5ZWhgiAf&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F15Lwf11m25%2F#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.linkedin.com/in/shafijur-rahman/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://t.me/Sjntr5" target="_blank"><i class="fab fa-telegram"></i></a>
+          <a href="https://www.instagram.com/shafijur.rahman" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+    </div>
+    <hr class="bg-light">
+    <div class="d-flex">
+      <a class="navbar-brand" href="#banner-section">
+        <img src="img/logo/logo.png" alt="Logo">
+      </a>
+<div class="navbar-collapse mr  d-lg-flex justify-content-center align-items-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" id="nav-home footer" href="#banner-section">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" id="nav-about footer" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="nav-projects footer" href="#projects">Projects</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" id="nav-testimonial footer" href="#testimonial">Testimonial</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" id="nav-contact footer" href="#contact">Contact</a>
+          </li>
+
+          
+        </ul>
+      </div>
+      
+    </div>
+    <div class="text-center copy-right">
+      <p id="ftr99">&copy; 2025 Shafijur Rahman. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+  
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Language Change Script -->
+  <script>
+    const content = {
+      en: {
+        "nav-home": " Home ",
+        "nav-about": "About",
+        "nav-projects": "Projects",
+        "nav-contact": "Contact",
+        "nav-testimonial": "Testimonial",
+        "contact2": "Contact Me",
+        "languageDropdown": "Language",
+        "banner-title": "Welcome to My Personal Website",
+        "banner-button": "View Projects",
+        "about-title": "About Me",
+        "about-description": "I’m a creative and detail-oriented developer with a passion for building clean and user-friendly websites.",
+        "about-skills-title": "Skills:",
+        "skill-1": "HTML, CSS, JavaScript",
+        "skill-2": "Bootstrap, Tailwind CSS",
+        "skill-3": "React.js & Vue.js",
+        "skill-4": "Responsive Design",
+        "skill-5": "Git & GitHub",
+        "myhobb": "My Hobbies",
+        "myhobbi": "My hobbies are the things I enjoy doing in my free time. They help me stay creative, relaxed, and motivated. I love visiting new places and exploring different cultures. Sketching street scenes and live moments gives me peace and joy. I enjoy playing chess, which sharpens my thinking and strategy skills. Solving all kinds of Rubik’s cubes — like 3x3, pyramid, and diamond — is another fun mental challenge I enjoy. These hobbies are not just pastimes; they are a part of who I am.",
+        "hobi-1": "Visiting Places",
+        "hobi-12": "I love exploring new places and experiencing different cultures. Traveling refreshes my mind, inspires creativity, and helps me see the world from new perspectives.",
+        "hobi-2": "Sketching",
+        "hobi-22": " I love skating in my free time. Putting on my skating shoes and skating through the streets or parks is not just fun, but also a great form of exercise. It keeps my body active, helps maintain balance, and gives me mental peace.",
+        "hobi-3": "Chess",
+        "hobi-33": "I love playing chess. It is a game of intelligence that enhances my thinking ability, patience, and strategic decision-making skills. Playing chess in my free time keeps me mentally alert and builds a mindset to embrace challenges.",
+        "hobi-4": "Solving Rubik’s Cubes",
+        "hobi-44": "I enjoy solving different types of Rubik’s Cubes such as 3x3, pyramid, and diamond cubes. It improves my mental skills, patience, and problem-solving abilities. Solving Rubik’s Cubes is a fun and challenging hobby for me.",
+        "hobi-5": "Visiting Places",
+        "hobi-55": "I love exploring new places and experiencing different cultures. Traveling refreshes my mind, inspires creativity, and helps me see the world from new perspectives.",
+        "hobi-6": "Sketching",
+        "hobi-66": " I love skating in my free time. Putting on my skating shoes and skating through the streets or parks is not just fun, but also a great form of exercise. It keeps my body active, helps maintain balance, and gives me mental peace.",
+        "hobi-7": "Chess",
+        "hobi-77": "I love playing chess. It is a game of intelligence that enhances my thinking ability, patience, and strategic decision-making skills. Playing chess in my free time keeps me mentally alert and builds a mindset to embrace challenges.",
+        "hobi-8": "Solving Rubik’s Cubes",
+        "hobi-88": "I enjoy solving different types of Rubik’s Cubes such as 3x3, pyramid, and diamond cubes. It improves my mental skills, patience, and problem-solving abilities. Solving Rubik’s Cubes is a fun and challenging hobby for me.",
+        "my-pro": "My Projects",
+        "my-p": "These projects showcase my skills and creativity, developed using modern technologies and best practices.",
+        
+
+        projejt1: "Portfolio Website",
+        projejt11: "I design and develop modern portfolio websites to showcase personal or professional achievements attractively.",
+        projejt2: "E-commerce Website",
+        projejt22: "I work on e-commerce websites where users can browse products, place orders, and make secure online payments.",
+        projejt3: "Blog Website",
+        projejt33: "I create blog websites with user-friendly interfaces where authors can share ideas, articles, and tutorials easily.",
+        projejt4: "Educational Website",
+        projejt44: "I love building educational platforms that offer courses, quizzes, and resources for self-learning and growth.",
+        projejt5: "News Website",
+        projejt55: "I develop news websites that display updated articles, headlines, and breaking news in real-time.",
+        projejt6: "Photography Portfolio",
+        projejt66: "I build visually stunning sites to display photography works in high quality, focusing on user experience.",
+        projejt7: "Business Website",
+        projejt77: "I design responsive business websites to present services, client testimonials, and contact information professionally.",
+        projejt8: "Travel Blog",
+        projejt88: "I create travel blogs where travelers can share experiences, tips, and photos from different places around the world.",
+
+        "pro-link": "Show The Project",
+        "pro-link1": "Show The Project",
+        "pro-link2": "Show The Project",
+        "pro-link3": "Show The Project",
+        "pro-link4": "Show The Project",
+        "pro-link5": "Show The Project",
+        "pro-link6": "Show The Project",
+        "pro-link7": "Show The Project",
+        
+        "show-more": "Show More Projects",
+
+        "testimonia": "Testimonial",
+        "what-say": "What Our Clients Say",
+
+        "test1": "John Doe",
+        "test11": "This service has been incredible! It helped me achieve my goals faster than I ever expected. Highly recommend!",
+        "test2": "Jane Smith",
+        "test22": "Fantastic experience! The team was professional and efficient. I couldn't be happier with the results.",
+        "test3": "Michael Lee",
+        "test33": "I saw immediate improvements in my business. Great service, great people. I highly recommend them.",
+        "test4": "Anika Rahman",
+        "test44": "Working with this team was a delight! Their dedication and attention to detail made all the difference.",
+
+        "test5": "Farzana Islam",
+        "test55": "They exceeded my expectations. The service was fast, friendly, and absolutely reliable.",
+
+        "test6": "Mehjabin Chowdhury",
+        "test66": "Incredible support and seamless experience. I’d gladly choose them again without hesitation.",
+
+
+        "cinta1":"Contact With Me",
+        "cinta2":"Location",
+        "cinta3":"Address",
+        "cinta33":"Bluewater Shopping City (5Th Floor), Zindabazar, Sylhet",
+        "cinta4":"Address",
+        "cinta44":"Velkuna, Manikkuna, Fenchuganj, Sylhet",
+        "cinta5":"Address",
+        "cinta55":"Abdus Shahid Mansion ( in front of Bazar Mosque ), Manikganj, Fenchuganj, Sylhet",
+        "cinta6": "Social Media",
+        "cinta7": "Contact With Me From Here",
+        "cinta8": "Full Name",
+        "cinta9": "Email address",
+        "cinta10": "Phone",
+        "cinta11": "Message",
+        "cinta12": "Send Message",
+
+        ftr1: "About Me",
+        ftr11: "I am a full-stack developer skilled in PHP and Python for building modern websites and backends.",
+        ftr2: "Quick Links",
+        ftr21: "Whatsapp",
+        ftr22: "Telegram",
+        ftr23: "Linkedin",
+        ftr24: "Facebook",
+        mob: "+8801942625398",
+        ftr3: "Contact",
+        ftr31: "Email: shafijura@gmail.com",
+        ftr32: "Phone: +8801942625398",
+        ftr99: "&copy; 2025 Shafijur Rahman. All rights reserved.",
+
+        "nav-home footer": " Home ",
+        "nav-about footer": "About",
+        "nav-projects footer": "Projects",
+        "nav-contact footer": "Contact",
+        "nav-testimonial footer": "Testimonial",
+        
+      },
+      bn: {
+        "nav-home": "প্রধান পৃষ্ঠা ",
+        "nav-about": "সম্পর্কিত",
+        "nav-projects": "প্রকল্প",
+        "nav-contact": "যোগাযোগ",
+        "nav-testimonial": "প্রশংসাপত্র",
+        "contact2": "আমার সাথে যোগাযোগ করুন",
+        "languageDropdown": "ভাষা",
+        "banner-title": "আমার ব্যক্তিগত ওয়েবসাইটে স্বাগতম",
+        "banner-button": "প্রকল্প দেখুন",
+        "about-title": "আমার সম্পর্কে",
+        "about-description": "আমি একজন সৃজনশীল ও বিস্তারিত মনোযোগী ডেভেলপার, যিনি পরিস্কার ও ব্যবহারকারী-বান্ধব ওয়েবসাইট তৈরি করতে পছন্দ করি।",
+        "about-skills-title": "দক্ষতা:",
+        "skill-1": "এইচটিএমএল, সিএসএস, জাভাস্ক্রিপ্ট",
+        "skill-2": "বুটস্ট্র্যাপ, টেইলউইন্ড সিএসএস",
+        "skill-3": "রিয়্যাক্ট.জেএস ও ভিউ.জেএস",
+        "skill-4": "রেসপনসিভ ডিজাইন",
+        "skill-5": "গিট ও গিটহাব",
+        "myhobb": "আমার শখ",
+        "myhobbi": "শখ হলো আমার সেই কাজগুলো, যেগুলো আমি অবসরে করতে উপভোগ করি। এগুলো আমাকে সৃজনশীল, শান্ত ও অনুপ্রাণিত থাকতে সাহায্য করে। আমি নতুন নতুন জায়গায় ঘুরতে এবং বিভিন্ন সংস্কৃতি আবিষ্কার করতে ভালোবাসি। রাস্তার দৃশ্য বা জীবন্ত মুহূর্ত আঁকতে আমার বিশেষ শান্তি ও আনন্দ লাগে। দাবা খেলতে আমি উপভোগ করি, কারণ এটি চিন্তাশক্তি ও কৌশলগত দক্ষতা বাড়ায়। বিভিন্ন ধরনের রুবিক'স কিউব — যেমন ৩x৩, পিরামিড, ডায়মন্ড — সমাধান করাও আমার জন্য এক মজার মানসিক খেলা। এসব শখ শুধু অবসরের কাজ নয়, বরং এগুলোই আমি কে তা প্রকাশ করে।",
+        "hobi-1": "নতুন জায়গায় ভ্রমণ",
+        "hobi-12": "আমি নতুন নতুন জায়গা ঘুরে দেখতে এবং ভিন্ন ভিন্ন সংস্কৃতি উপভোগ করতে ভালোবাসি। ভ্রমণ আমার মনকে সতেজ করে, সৃজনশীলতাকে জাগিয়ে তোলে এবং পৃথিবীকে নতুন দৃষ্টিভঙ্গিতে দেখতে সাহায্য করে।",
+        "hobi-2": "স্কেটিং",
+        "hobi-22": "আমি অবসরে স্কেটিং করতে ভালোবাসি। স্কেটিং জুতা পরে রাস্তায় কিংবা পার্কে স্কেটিং করা শুধু মজারই নয়, শরীরচর্চারও একটি চমৎকার উপায়। এটি শরীরকে সক্রিয় রাখে, ভারসাম্য বজায় রাখতে সাহায্য করে এবং মানসিক প্রশান্তি দেয়।",
+        "hobi-3": "দাবা খেলা",
+        "hobi-33": "আমি দাবা খেলতে ভালোবাসি। এটি একটি বুদ্ধির খেলা, যা আমার চিন্তাশক্তি, ধৈর্য এবং কৌশলগত সিদ্ধান্ত নেওয়ার দক্ষতা বাড়ায়। অবসরে দাবা খেলা আমাকে মানসিকভাবে সজাগ রাখে এবং চ্যালেঞ্জ গ্রহণের মানসিকতা গড়ে তোলে।",
+        "hobi-4": "রুবিক্স কিউব মিলানো",
+        "hobi-44": "আমি বিভিন্ন ধরনের রুবিক্স কিউব যেমন ৩x৩, পিরামিড এবং ডায়মন্ড কিউব মিলাতে ভালোবাসি। এটি আমার মানসিক দক্ষতা, ধৈর্য এবং সমস্যা সমাধানের ক্ষমতা বৃদ্ধি করে। রুবিক্স কিউব সমাধান করাটা আমার জন্য একটি মজার এবং চ্যালেঞ্জিং শখ।",
+        "hobi-5": "নতুন জায়গায় ভ্রমণ",
+        "hobi-55": "আমি নতুন নতুন জায়গা ঘুরে দেখতে এবং ভিন্ন ভিন্ন সংস্কৃতি উপভোগ করতে ভালোবাসি। ভ্রমণ আমার মনকে সতেজ করে, সৃজনশীলতাকে জাগিয়ে তোলে এবং পৃথিবীকে নতুন দৃষ্টিভঙ্গিতে দেখতে সাহায্য করে।",
+        "hobi-6": "স্কেটিং",
+        "hobi-66": "আমি অবসরে স্কেটিং করতে ভালোবাসি। স্কেটিং জুতা পরে রাস্তায় কিংবা পার্কে স্কেটিং করা শুধু মজারই নয়, শরীরচর্চারও একটি চমৎকার উপায়। এটি শরীরকে সক্রিয় রাখে, ভারসাম্য বজায় রাখতে সাহায্য করে এবং মানসিক প্রশান্তি দেয়।",
+        "hobi-7": "দাবা খেলা",
+        "hobi-77": "আমি দাবা খেলতে ভালোবাসি। এটি একটি বুদ্ধির খেলা, যা আমার চিন্তাশক্তি, ধৈর্য এবং কৌশলগত সিদ্ধান্ত নেওয়ার দক্ষতা বাড়ায়। অবসরে দাবা খেলা আমাকে মানসিকভাবে সজাগ রাখে এবং চ্যালেঞ্জ গ্রহণের মানসিকতা গড়ে তোলে।",
+        "hobi-8": "রুবিক্স কিউব মিলানো",
+        "hobi-88": "আমি বিভিন্ন ধরনের রুবিক্স কিউব যেমন ৩x৩, পিরামিড এবং ডায়মন্ড কিউব মিলাতে ভালোবাসি। এটি আমার মানসিক দক্ষতা, ধৈর্য এবং সমস্যা সমাধানের ক্ষমতা বৃদ্ধি করে। রুবিক্স কিউব সমাধান করাটা আমার জন্য একটি মজার এবং চ্যালেঞ্জিং শখ।",
+        "my-pro": "আমার প্রকল্পসমূহ",
+        "my-p": "এই প্রকল্পগুলো আমার দক্ষতা ও সৃজনশীলতার প্রতিফলন, যা আধুনিক প্রযুক্তি ও সর্বোত্তম কৌশল ব্যবহার করে তৈরি করা হয়েছে।",
+
+        
+        projejt1: "পোর্টফোলিও ওয়েবসাইট",
+        projejt11: "আমি এমন আধুনিক পোর্টফোলিও ওয়েবসাইট ডিজাইন ও তৈরি করি যা ব্যক্তিগত বা পেশাগত অর্জন আকর্ষণীয়ভাবে তুলে ধরে।",
+        projejt2: "ই-কমার্স ওয়েবসাইট",
+        projejt22: "আমি এমন ই-কমার্স ওয়েবসাইটে কাজ করি যেখানে ব্যবহারকারীরা পণ্য দেখতে, অর্ডার করতে এবং নিরাপদভাবে পেমেন্ট করতে পারে।",
+        projejt3: "ব্লগ ওয়েবসাইট",
+        projejt33: "আমি এমন ব্লগ ওয়েবসাইট তৈরি করি যেখানে লেখকরা সহজেই তাদের ভাবনা, প্রবন্ধ এবং টিউটোরিয়াল শেয়ার করতে পারে।",
+        projejt4: "শিক্ষামূলক ওয়েবসাইট",
+        projejt44: "আমি এমন শিক্ষামূলক প্ল্যাটফর্ম তৈরি করতে ভালোবাসি যা কোর্স, কুইজ এবং শেখার রিসোর্স সরবরাহ করে।",
+        projejt5: "সংবাদ ওয়েবসাইট",
+        projejt55: "আমি এমন সংবাদ ওয়েবসাইট তৈরি করি যা তাৎক্ষণিকভাবে শিরোনাম ও ব্রেকিং নিউজ দেখায়।",
+        projejt6: "ফটোগ্রাফি পোর্টফোলিও",
+        projejt66: "আমি দৃষ্টি নন্দন ওয়েবসাইট তৈরি করি যেখানে উচ্চমানের ছবির মাধ্যমে ফটোগ্রাফির কাজ উপস্থাপন করা যায়।",
+        projejt7: "বিজনেস ওয়েবসাইট",
+        projejt77: "আমি রেসপনসিভ বিজনেস ওয়েবসাইট ডিজাইন করি যা পেশাদারভাবে সেবা ও ক্লায়েন্ট টেস্টিমনিয়াল তুলে ধরে।",
+        projejt8: "ট্রাভেল ব্লগ",
+        projejt88: "আমি এমন ট্রাভেল ব্লগ তৈরি করি যেখানে ভ্রমণকারীরা তাদের অভিজ্ঞতা, টিপস ও ছবি শেয়ার করতে পারে।",
+
+        "pro-link": "প্রকল্পটি দেখুন",
+        "pro-link1": "প্রকল্পটি দেখুন",
+        "pro-link2": "প্রকল্পটি দেখুন",
+        "pro-link3": "প্রকল্পটি দেখুন",
+        "pro-link4": "প্রকল্পটি দেখুন",
+        "pro-link5": "প্রকল্পটি দেখুন",
+        "pro-link6": "প্রকল্পটি দেখুন",
+        "pro-link7": "প্রকল্পটি দেখুন",
+       
+        "show-more": "আরও প্রকল্প দেখুন",
+
+        "testimonia": "প্রশংসাপত্র ",
+        "what-say": "আমাদের ক্লায়েন্টরা কী বলেন",
+
+        "test1": "জন ডো",
+        "test11": "এই সেবাটি অসাধারণ! এটি আমাকে আমার লক্ষ্যগুলো অনেক দ্রুত অর্জন করতে সাহায্য করেছে। আমি আন্তরিকভাবে সুপারিশ করছি।",
+
+        "test2": "জেন স্মিথ",
+        "test22": "দারুণ অভিজ্ঞতা! টিমটি ছিল পেশাদার এবং দক্ষ। ফলাফল দেখে আমি অত্যন্ত সন্তুষ্ট।",
+
+        "test3": "মাইকেল লি",
+        "test33": "আমি আমার ব্যবসায় সঙ্গে সঙ্গে উন্নতি লক্ষ্য করেছি। দারুণ সেবা, দারুণ মানুষ। আমি অবশ্যই তাদের সুপারিশ করবো।",
+
+        "test4": "আনিকা রহমান",
+        "test44": "“এই টিমের সঙ্গে কাজ করাটা ছিল অসাধারণ! তাদের নিষ্ঠা আর সূক্ষ্মতার প্রতি মনোযোগ সবকিছু বদলে দিয়েছে।”",
+
+        "test5": "ফারজানা ইসলাম",
+        "test55": "“তারা আমার প্রত্যাশাকে ছাড়িয়ে গেছে। সেবা ছিল দ্রুত, বন্ধুসুলভ এবং একদমই নির্ভরযোগ্য।”",
+
+        "test6": "মেহজাবিন চৌধুরী",
+        "test66": "“অসাধারণ সহায়তা ও দারুণ অভিজ্ঞতা। আমি নির্দ্বিধায় আবারও তাদের বেছে নেবো।”",
+
+        "cinta1": "আমার সাথে যোগাযোগ করুন",
+        "cinta2": "অবস্থান",
+        "cinta3": "ঠিকানা",
+        "cinta33": "ব্লুওয়াটার শপিং সিটি (৫ম তলা), জিন্দাবাজার, সিলেট",
+        "cinta4": "ঠিকানা",
+        "cinta44": "ভেলকোনা, মানিককোনা, ফেঞ্চুগঞ্জ, সিলেট",
+        "cinta5": "ঠিকানা",
+        "cinta55": "আব্দুস শহীদ ম্যানশন ( বাজার মসজিদের সামনে ) মানিকগঞ্জ, ফেঞ্চুগঞ্জ, সিলেট",
+        "cinta6": "সোশ্যাল মিডিয়া",
+        "cinta7": "এখান থেকে আমার সাথে যোগাযোগ করুন",
+        "cinta8": "পূর্ণ নাম",
+        "name": "পূর্ণ নাম",
+        "cinta9": "ইমেইল ঠিকানা",
+        "cinta10": "ফোন",
+        "cinta11": "বার্তা",
+        "cinta12": "বার্তা পাঠান",
+
+        ftr1: "আমার সম্পর্কে",
+        ftr11: "আমি একজন ফুল-স্ট্যাক ডেভেলপার, যিনি PHP ও Python দিয়ে ওয়েবসাইট ও ব্যাকএন্ড তৈরি করি।",
+        ftr2: "দ্রুত লিংকসমূহ",
+        ftr21: "হোয়াটসঅ্যাপ",
+        ftr22: "টেলিগ্রাম",
+        ftr23: "লিঙ্কডইন",
+        ftr24: "ফেসবুক",
+        mob: "০১৯৪২৬২৫৩৯৮",
+        ftr3: "যোগাযোগ",
+        ftr31: "ইমেইল: shafijura@gmail.com",
+        ftr32: "ফোন: +৮৮০১৯৪২৬২৫৩৯৮",
+        ftr99: "© ২০২৫ শাফিজুর রহমান। সর্বস্বত্ব সংরক্ষিত।",
+
+        "nav-home footer": "প্রধান পৃষ্ঠা ",
+        "nav-about footer": "সম্পর্কিত",
+        "nav-projects footer": "প্রকল্প",
+        "nav-contact footer": "যোগাযোগ",
+        "nav-testimonial footer": "প্রশংসাপত্র",
+      }
+    };
+    
+    function changeLanguage(lang) {
+      for (let key in content[lang]) {
+        const el = document.getElementById(key);
+        if (el) el.innerText = content[lang][key];
+      }
+      typedWords = lang === 'bn'
+        ? ["ডেভেলপার ", "ডিজাইনার ", "ফ্রিল্যান্সার "]
+        : ["Developer ", "Designer ", "Freelancer "];
+      startTyping();
+    }
+  
+    // Typing Effect
+    let typedWords = ["Developer ", "Designer ", "Freelancer "];
+    let i = 0, j = 0, current = '', isDeleting = false;
+  
+    function typeEffect() {
+      if (typedWords.length > 0) {
+        const word = typedWords[i];
+        current = isDeleting ? word.substring(0, j--) : word.substring(0, j++);
+        document.getElementById("typed-text").innerText = current;
+  
+        if (!isDeleting && j === word.length) {
+          isDeleting = true;
+          setTimeout(typeEffect, 2000);
+          return;
+        }
+        if (isDeleting && j === 0) {
+          isDeleting = false;
+          i = (i + 1) % typedWords.length;
+        }
+        setTimeout(typeEffect, isDeleting ? 80 : 150);
+      }
+    }
+  
+    function startTyping() {
+      i = 0;
+      j = 0;
+      isDeleting = false;
+    }
+  
+    window.onload = () => {
+      typeEffect();
+    };
+  </script>
+
+
+  
+<script src="script.js">
+   const scrollSlider = document.querySelector('.slider-track');
+const cards = document.querySelectorAll('.hobby-card');
+let currentIndex = 0;
+
+function moveSlider() {
+  currentIndex = (currentIndex + 1) % cards.length;
+  scrollSlider.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+
+setInterval(moveSlider, 3000); // Change slide every 3 seconds
+
+  </script>
+
+  <script src="script.js">
+   const projectSlider = document.querySelector('.project-track');
+const cardss = document.querySelectorAll('.project-card');
+let projectIndex = 0;
+
+function moveSlider() {
+  projectIndex = (projectIndex + 1) % cardss.length;
+  projectSlider.style.transform = `translateX(${projectIndex * 100}%)`;
+}
+
+setInterval(moveSlider, 3000); // Change slide every 3 seconds
+
+  </script>
+
+  
+  
+  
+  
+</body>
+</html>
