@@ -8,8 +8,19 @@ body {
 
 
 .bagcol {
-    background: linear-gradient(to bottom, #2c5364 0%, #000000 100%);
+    background: linear-gradient(to bottom, #000000, #4b0054, #000000);
 }
+.sear{
+  width: 160px;
+}
+
+.searchable.highlight {
+    background-color: #fffacc;
+    border-bottom: 2px solid #ffc107;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    transform: translateY(-2px);
+  }
+  
   .navbar {
       background-color: #000000;
     }
@@ -95,7 +106,7 @@ body {
 
 
 footer {
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      background: linear-gradient(to right, #000000, #e200ff61, #000000);
       color: #fff;
     }
     footer a {
