@@ -1,13 +1,25 @@
-body {
+/* body {
   
 
     background-color: #000000 !important;
     overflow-x: hidden; /* ডান–বাম স্ক্রল বন্ধ করবে */
-  overflow-y: auto;
-  }
+  /* overflow-y: auto;
+  } */ 
 
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #000000 !important;
+  overflow-x: hidden; /* ডান–বাম স্ক্রল বন্ধ */
+  overflow-y: auto;   /* উপরে–নিচে স্ক্রল চালু */
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
 
-
+* {
+  box-sizing: inherit;
+}
 
 
 
